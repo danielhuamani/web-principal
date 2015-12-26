@@ -1,0 +1,33 @@
+{
+  "name": "web-principal",
+  "version": "0.0.1",
+  "description": "la web principal de nuestros portafolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danielhuamani/web-principal.git"
+  },
+  "author": "danielhuamani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielhuamani/web-principal/issues"
+  },
+  "homepage": "https://github.com/danielhuamani/web-principal",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-stylus": "^2.1.2",
+    "gulp-jade": "^1.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-uglify": "^1.5.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-livereload": "^3.8.1",
+    "st": "^1.1.0"
+  },
+  "dependencies": {
+    "jade": "^1.11.0",
+    "plumber": "^0.4.8"
+  }
+}
