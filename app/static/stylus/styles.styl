@@ -1,0 +1,127 @@
+@import 'nib'
+/*~~~~~~~~~~~~~COLORES y FUENTE~~~~~~~~~~~~~~~*/
+
+c-blanco = #fff
+c-azul = #0A6EBD
+c-plomo = #2F2F2F
+c-blanco-fondo = #F5F6FA
+c-negro = #000
+
+lato = 'Lato', sans-serif;
+/***********GENERALES***************/
+*
+    margin 0
+    padding 0
+
+a
+    text-decoration inherit
+.cnt-general
+    max-width 1020px
+    width 98%
+    margin auto
+
+
+ul li
+    list-style-type none
+
+.subtitle-banner
+    font-size 24px
+    font-family lato
+    color c-blanco
+    width 80%
+    margin auto
+    text-align center
+
+
+/********** HEADER **********/
+
+header
+    background c-blanco-fondo
+    position fixed
+    top 0px
+    margin auto
+    right 0px
+    left 0px
+    z-index 100
+    box-shadow 0px 1px 1px c-plomo
+/*    &:before
+        content ""
+        position fixed
+        top 90px
+        z-index 110
+        left 0px
+        right 0px
+        margin auto
+        width 100%
+        height 3px
+        background c-negro*/
+    .cnt-general
+        display flex
+    figure.cnt-logo
+        img.logo
+            display block
+            width 150px
+            height 90px
+    .nav-principal
+        width 100%
+        height 90px
+        ul
+            height 100%
+            align-items center
+            display flex
+            justify-content space-around
+            li
+                width 100px
+                text-align center
+                a
+                    color c-negro
+                    font-family lato
+                    transition 0.3s ease all
+
+                    &:hover
+                        font-weight 700
+                        text-decoration underline
+                        color c-azul
+.cnt-slider
+    margin-top 90px
+    width 100%
+    height 480px
+    .galeria-slider
+        width 100%
+        height 100%
+        position relative
+        .capa-slider
+            width 100%
+            height 100%
+            background c-negro
+            opacity 0.2
+            position absolute
+            left 0px
+            right 0px
+            margin auto
+            top 0px
+            z-index 10
+            /*.subtitle-banner
+                position relative
+                z-index 20*/
+        .item-img
+            background-size cover
+            width 100%
+            height 100%
+            display flex
+            align-items center
+        .cnt-texto
+            position absolute
+            left 0px
+            right 0px
+            top 0px
+            display flex
+            margin auto
+            height 100%
+            z-index 20
+            h2
+                text-shadow 0 1px 1px c-plomo
+/*    .galeria-slider:before
+        content ""
+
+*/
