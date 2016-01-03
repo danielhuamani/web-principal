@@ -4,36 +4,97 @@ html(lang="en")
 		meta(charset="UTF-8")
 		title Document
 		link(rel="stylesheet", href="../../static/css/styles.css")
-		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato")
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+		link(rel="stylesheet", href="../../static/css/slick-theme.css")
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans|Lato' rel='stylesheet' type='text/css'>
 	body
-		header
-			.cnt-general
-				figure.cnt-logo
-					img.logo(src="../../static/img/cabeza.jpg", alt="", width="150", heigth="90")
-				nav.nav-principal
-					ul
-						li
-							a(href="") Inicio
-						li
-							a(href="") Nosotros
-						li
-							a(href="") Servicios
-						li
-							a(href="") Portafolio
-						li
-							a(href="") Contacto
-		section.cnt-slider
-			.galeria-slider
-				.capa-slider
+		.cnt-wrapper
+			header
+				.cnt-general
+					figure
+						img(src="../../static/img/cabeza.jpg", alt="", height="90", width="150")
+					nav.menu-principal
+						ul
+							li
+								a(href="") Inicio
+							li
+								a(href="") Nosotros
+							li
+								a(href="") Servicios
+							li
+								a(href="") Portafolio
+							li
+								a(href="") Contacto
+			section.cnt-slider
+				.banner
+					.cnt-img(style="background-image:url('../../static/img/slider.jpg')")
+					.capa
+						.cnt-general
+							h2.
+								 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					.sombra
+				.banner
+					.cnt-img(style="background-image:url('../../static/img/slider.jpg')")
+					.capa
+						.cnt-general
+							h2.
+								 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					.sombra
+				.banner
+					.cnt-img(style="background-image:url('../../static/img/slider.jpg')")
+					.capa
+						.cnt-general
+							h2.
+								 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					.sombra
 
-				.item-img(style="background-image:url(../../static/img/slider.jpg)")
-				.cnt-texto
-					h2.subtitle-banner.
-						 ipsum dolor sit amet, consectetur adipisicing elit. Ea sequi, magnam ipsa deleniti
-						 ctetur adipisicing elit. Ea sequi, magnam ipsa deleniti
+			section.nosotros.cnt-section
+				.cnt-general
+					h2.title.
+						Nosotros
+					.contenido
+						.texto
+							p.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos natus tenetur est magni voluptas suscipit repudiandae dolorem nobis fugit dicta nesciunt quibusdam dignissimos, et voluptatem saepe minima, quidem quisquam. Qui!
+
+						figure
+							img(src="../../static/img/slider.jpg", alt="")
+			section.servicios.cnt-section
+				.cnt-general
+					h2.title.
+						Servicios
+					.cnt-servicios
+						.item
+							.cnt-contenido
+								span.icon-html-five.icono
+								h3.
+									Diseño Web
+						.item
+							.cnt-contenido
+								span.icon-cart.icono
+								h3.
+									Comercio Electronico
+						.item
+							.cnt-contenido
+								span.icon-file-text.icono
+								h3.
+									Desarrollo de Extranet's
+						.item
+							.cnt-contenido
+								span.icon-mobile.icono
+								h3.
+									Desarrollo de Aplicaciones Mobiles
 
 
 
-
-
+		<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+		script(type='text/javascript').
+			$('.cnt-slider').slick({
+				dots: true,
+			 	//- infinite: true,
+			 	speed: 500,
+			 	fade: true,
+			 	cssEase: 'linear'
+			});
 

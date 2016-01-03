@@ -3,35 +3,110 @@
   <head>
     <meta charset="UTF-8"/>
     <title>Document</title>
-    <link rel="stylesheet" href="../../static/css/styles.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
+    <link rel="stylesheet" href="../../static/css/styles.css"/><link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+    <link rel="stylesheet" href="../../static/css/slick-theme.css"/><link href='https://fonts.googleapis.com/css?family=Open+Sans|Lato' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <header>
-      <div class="cnt-general">
-        <figure class="cnt-logo"><img src="../../static/img/cabeza.jpg" alt="" width="150" heigth="90" class="logo"/></figure>
-        <nav class="nav-principal">
-          <ul>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Nosotros</a></li>
-            <li><a href="">Servicios</a></li>
-            <li><a href="">Portafolio</a></li>
-            <li><a href="">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <section class="cnt-slider">
-      <div class="galeria-slider">
-        <div class="capa-slider"></div>
-        <div style="background-image:url(../../static/img/slider.jpg)" class="item-img"></div>
-        <div class="cnt-texto">
-          <h2 class="subtitle-banner">
-             ipsum dolor sit amet, consectetur adipisicing elit. Ea sequi, magnam ipsa deleniti
-             ctetur adipisicing elit. Ea sequi, magnam ipsa deleniti
-          </h2>
+    <div class="cnt-wrapper">
+      <header>
+        <div class="cnt-general">
+          <figure><img src="../../static/img/cabeza.jpg" alt="" height="90" width="150"/></figure>
+          <nav class="menu-principal">
+            <ul>
+              <li><a href="">Inicio</a></li>
+              <li><a href="">Nosotros</a></li>
+              <li><a href="">Servicios</a></li>
+              <li><a href="">Portafolio</a></li>
+              <li><a href="">Contacto</a></li>
+            </ul>
+          </nav>
         </div>
-      </div>
-    </section>
+      </header>
+      <section class="cnt-slider">
+        <div class="banner">
+          <div style="background-image:url('../../static/img/slider.jpg')" class="cnt-img"></div>
+          <div class="capa">
+            <div class="cnt-general">
+              <h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+            </div>
+          </div>
+          <div class="sombra"></div>
+        </div>
+        <div class="banner">
+          <div style="background-image:url('../../static/img/slider.jpg')" class="cnt-img"></div>
+          <div class="capa">
+            <div class="cnt-general">
+              <h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+            </div>
+          </div>
+          <div class="sombra"></div>
+        </div>
+        <div class="banner">
+          <div style="background-image:url('../../static/img/slider.jpg')" class="cnt-img"></div>
+          <div class="capa">
+            <div class="cnt-general">
+              <h2> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+            </div>
+          </div>
+          <div class="sombra"></div>
+        </div>
+      </section>
+      <section class="nosotros cnt-section">
+        <div class="cnt-general">
+          <h2 class="title">Nosotros</h2>
+          <div class="contenido">
+            <div class="texto">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos natus tenetur est magni voluptas suscipit repudiandae dolorem nobis fugit dicta nesciunt quibusdam dignissimos, et voluptatem saepe minima, quidem quisquam. Qui!
+                
+              </p>
+            </div>
+            <figure><img src="../../static/img/slider.jpg" alt=""/></figure>
+          </div>
+        </div>
+      </section>
+      <section class="servicios cnt-section">
+        <div class="cnt-general">
+          <h2 class="title">Servicios</h2>
+          <div class="cnt-servicios">
+            <div class="item">
+              <div class="cnt-contenido"><span class="icon-html-five icono"></span>
+                <h3>Diseño Web</h3>
+              </div>
+            </div>
+            <div class="item">
+              <div class="cnt-contenido"><span class="icon-cart icono"></span>
+                <h3>Comercio Electronico</h3>
+              </div>
+            </div>
+            <div class="item">
+              <div class="cnt-contenido"><span class="icon-file-text icono"></span>
+                <h3>Desarrollo de Extranet's</h3>
+              </div>
+            </div>
+            <div class="item">
+              <div class="cnt-contenido"><span class="icon-mobile icono"></span>
+                <h3>
+                  Desarrollo de Aplicaciones Mobiles
+                  
+                  
+                  
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div><script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+    <script type="text/javascript">
+      $('.cnt-slider').slick({
+      	dots: true,
+       	//- infinite: true,
+       	speed: 500,
+       	fade: true,
+       	cssEase: 'linear'
+      });
+    </script>
   </body>
 </html>

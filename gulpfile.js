@@ -7,11 +7,11 @@ var plumber = require('gulp-plumber');
 var connect = require('gulp-connect');
 var historyApiFallback = require('connect-history-api-fallback');
 var directorio = {
+
   jade: ['app/templates/jade/*.jade'],
   stylus: ['app/static/stylus/styles.styl']
 
 };
-
 
 gulp.task('stylus', function () {
   gulp.src(directorio.stylus)
@@ -27,18 +27,21 @@ gulp.task('stylus', function () {
 
 gulp.task('templates', function() {
 
-  gulp.src(directorio.jade)
+  return gulp.src(directorio.jade)
     .pipe(plumber())
-    .pipe(jade())
+    .pipe(jade({
+      pretty: true
+      }))
     .pipe(gulp.dest('app/templates/html'))
     .pipe(connect.reload());
+
 
 });
 
 gulp.task('watch', function() {
 
-  gulp.watch('app/static/stylus/styles.styl', ['stylus']),
-  gulp.watch('app/templates/jade/*.jade', ['templates'])
+	gulp.watch('app/static/stylus/styles.styl', ['stylus']),
+	gulp.watch('app/templates/jade/*.jade', ['templates'])
 });
 
 //creacioon  del server para el livereload
@@ -56,3 +59,4 @@ gulp.task('connect', function() {
   });
 });
 gulp.task('default', ['stylus', 'templates', 'watch', 'connect']);
+//creacioon  del server para el livereload
